@@ -28,10 +28,7 @@ export class AnimalService {
   constructor(private http: HttpClient) {}
 
   getAllAnimalsByZooKeeper$(id: number): Observable<IAnimal[]> {
-    return this.http.get<IAnimal[]>(
-      "https://localhost:44329/api/Zoo/animals/" + id,
-      this.httpOptions
-    );
+    return this.http.get<IAnimal[]>(this.baseUrl + "/" + id, this.httpOptions);
   }
 
   addAnimal$(model): Observable<IAnimal> {
@@ -42,9 +39,4 @@ export class AnimalService {
     };
     return this.http.post<IAnimal>(this.baseUrl, animal);
   }
-
-  //   addZooKeeper$(model): Observable<IZooKeeper> {
-  //     let zooKeeper = { name: model.name };
-  //     return this.http.post<IZooKeeper>(this.baseUrl + "api/Zoo", zooKeeper);
-  //   }
 }
