@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bissoft.Interview.Web", "Bissoft.Interview\Bissoft.Interview.Web.csproj", "{45DC881A-A671-4C1C-AACB-FEF21454D702}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{78B07F45-2F0E-475E-A85D-6922021AF29E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bissoft.Interview.API", "Bissoft.Interview.API\Bissoft.Interview.API.csproj", "{012C393B-4B7E-4092-BD96-CB0D02F467D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{72698BC2-1960-4FEA-B36F-4497220F0184}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BussinesLogic", "BussinesLogic", "{FA41904C-A3BE-4755-A863-DFC95F696CEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bissoft.Interview.Services", "Bissoft.Interview.Services\Bissoft.Interview.Services.csproj", "{517130AF-CB19-4A4D-96A2-AC7AEF41DB25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bissoft.Interview.Data", "Bissoft.Interview.Data\Bissoft.Interview.Data.csproj", "{9283D768-6F2F-4D0D-B33E-7BD6F4491DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45DC881A-A671-4C1C-AACB-FEF21454D702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45DC881A-A671-4C1C-AACB-FEF21454D702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45DC881A-A671-4C1C-AACB-FEF21454D702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45DC881A-A671-4C1C-AACB-FEF21454D702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{012C393B-4B7E-4092-BD96-CB0D02F467D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{012C393B-4B7E-4092-BD96-CB0D02F467D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{012C393B-4B7E-4092-BD96-CB0D02F467D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{012C393B-4B7E-4092-BD96-CB0D02F467D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{517130AF-CB19-4A4D-96A2-AC7AEF41DB25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517130AF-CB19-4A4D-96A2-AC7AEF41DB25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517130AF-CB19-4A4D-96A2-AC7AEF41DB25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517130AF-CB19-4A4D-96A2-AC7AEF41DB25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9283D768-6F2F-4D0D-B33E-7BD6F4491DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9283D768-6F2F-4D0D-B33E-7BD6F4491DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9283D768-6F2F-4D0D-B33E-7BD6F4491DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9283D768-6F2F-4D0D-B33E-7BD6F4491DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{45DC881A-A671-4C1C-AACB-FEF21454D702} = {78B07F45-2F0E-475E-A85D-6922021AF29E}
+		{012C393B-4B7E-4092-BD96-CB0D02F467D4} = {78B07F45-2F0E-475E-A85D-6922021AF29E}
+		{517130AF-CB19-4A4D-96A2-AC7AEF41DB25} = {FA41904C-A3BE-4755-A863-DFC95F696CEF}
+		{9283D768-6F2F-4D0D-B33E-7BD6F4491DFF} = {72698BC2-1960-4FEA-B36F-4497220F0184}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B172DD2-9E61-4B84-B9EB-BDE3202B3597}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+<div class="container">
+  <mat-card-title class="mat_title">Lista de animale</mat-card-title>
+
+  <div class="body">
+    <div *ngIf="animals">
+      <div *ngFor="let animal of animals">
+        <div class="animal">
+          <p>Animalul este: {{ animal.animalType }}</p>
+          <p>
+            Data de nastere este:
+            {{ animal.dateOfBirth | date: "d/M/yyyy" }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>{{ errorMsg }}</div>
+  </div>
+</div>

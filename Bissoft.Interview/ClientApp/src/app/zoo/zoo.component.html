@@ -1,0 +1,67 @@
+<h1>ZooKeepers</h1>
+<hr />
+<div class="container">
+  <button mat-raised-button (click)="goToAddZooKeeper()" class="add_btn">
+    Add a zookeeper
+  </button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th class="action">Action</th>
+        <th class="action">Animal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let zooKeeper of zooKeepers">
+        <td>{{ zooKeeper.id }}</td>
+        <td>{{ zooKeeper.name }}</td>
+        <td class="btns">
+          <button mat-raised-button (click)="goToEditZooKeeper(zooKeeper)">
+            Edit a zookeeper
+          </button>
+          <button mat-raised-button (click)="deleteZooKeeper(zooKeeper.id)">
+            Delete
+          </button>
+        </td>
+        <td>
+          <div class="btns">
+            <button mat-raised-button (click)="goToAddAnimal(zooKeeper.id)">
+              Add a animal
+            </button>
+            <button mat-raised-button (click)="goToAnimalList(zooKeeper.id)">
+              Corresponding animals
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- <div class="container">
+  <table mat-table [dataSource]="copyZooKeepers" class="mat-table">
+    <ng-container matColumnDef="zooKeepers_header">
+      <th mat-header-cell *matHeaderCellDef colspan="4" class="centered">
+        Cafele
+      </th>
+    </ng-container>
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>ID</th>
+      <td mat-cell *matCellDef="let zooKeeper">
+        {{ zooKeeper.id }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let zooKeeper">{{ zooKeeper.name }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="zooKeepers_header"></tr>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div> -->

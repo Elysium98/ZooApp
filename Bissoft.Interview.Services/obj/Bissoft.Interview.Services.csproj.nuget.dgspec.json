@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Services\\Bissoft.Interview.Services.csproj": {}
+  },
+  "projects": {
+    "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Data\\Bissoft.Interview.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Data\\Bissoft.Interview.Data.csproj",
+        "projectName": "Bissoft.Interview.Data",
+        "projectPath": "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Data\\Bissoft.Interview.Data.csproj",
+        "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
+        "outputPath": "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Paul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Services\\Bissoft.Interview.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Services\\Bissoft.Interview.Services.csproj",
+        "projectName": "Bissoft.Interview.Services",
+        "projectPath": "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Services\\Bissoft.Interview.Services.csproj",
+        "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
+        "outputPath": "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Paul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Data\\Bissoft.Interview.Data.csproj": {
+                "projectPath": "D:\\Facultate\\Bissoft.Interview\\Bissoft.Interview.Data\\Bissoft.Interview.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

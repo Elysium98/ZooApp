@@ -1,0 +1,50 @@
+<div class="container">
+  <mat-card-title class="mat_title">Adaugati un animal</mat-card-title>
+  <mat-card-content>
+    <form
+      class="add_form"
+      [formGroup]="addAnimalFormGroup"
+      (ngSubmit)="onSubmit()"
+    >
+      <mat-form-field class="form-field" appearance="outline">
+        <mat-label>Data nașterii </mat-label>
+        <input
+          matInput
+          type="date"
+          placeholder="Data nașterii"
+          formControlName="dateOfBirth"
+        />
+        <mat-error *ngIf="hasAddError('dateOfBirth', 'required')"
+          >Data nașterii obligatorie</mat-error
+        >
+      </mat-form-field>
+
+      <mat-form-field class="form-field" appearance="fill">
+        <mat-label>Alege tipul animalului</mat-label>
+        <mat-select formControlName="animalType">
+          <mat-option
+            *ngFor="let animalType of animalTypes"
+            [value]="animalType"
+          >
+            {{ animalType }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="hasAddError('animalType', 'required')"
+          >Tipul obligatoriu</mat-error
+        >
+      </mat-form-field>
+
+      <div align="center">
+        <button
+          color="warn"
+          mat-raised-button
+          class="submitButton"
+          type="submit"
+          [disabled]="!addAnimalFormGroup.valid"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </mat-card-content>
+</div>
